@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanfall 2 Movement Lab</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Titanfall 2 Movement Lab</h1>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#techniques">Techniques</a>
+                <a href="#practice">Practice</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <p class="tag">Static Website Project</p>
+                <h2>Master Pilot Movement</h2>
+                <p>
+                    Learn Titanfall 2 movement through clear technique pages.
+                    Click a movement card to open its full explanation, including
+                    inputs, principles, uses, practice steps, and demo videos.
+                </p>
+                <button onclick="scrollToTechniques()">Start Training</button>
+            </div>
+        </section>
+
+        <section id="techniques">
+            <h2 class="section-title">Movement Techniques</h2>
+            <p class="section-intro">
+                Click a card to open the full guide page. The homepage only shows technique names.
+            </p>
+
+            <div class="card-container">
+                <a class="card beginner" href="detail.html?technique=slidehopping">
+                    <h3>Slide Hopping</h3>
+                    <span>Beginner</span>
+                </a>
+
+                <a class="card beginner" href="detail.html?technique=wallkick">
+                    <h3>Wall Kick</h3>
+                    <span>Beginner</span>
+                </a>
+
+                <a class="card intermediate" href="detail.html?technique=crouchkick">
+                    <h3>Crouch Kick</h3>
+                    <span>Intermediate</span>
+                </a>
+
+                <a class="card beginner" href="detail.html?technique=tapstrafe">
+                    <h3>Tap Strafe</h3>
+                    <span>Beginner</span>
+                </a>
+
+                <a class="card advanced" href="detail.html?technique=rasstrafe">
+                    <h3>Ras Strafe</h3>
+                    <span>Advanced</span>
+                </a>
+
+                <a class="card advanced" href="detail.html?technique=lurchstrafe">
+                    <h3>Lurch Strafe</h3>
+                    <span>Advanced</span>
+                </a>
+            </div>
+        </section>
+
+        <section id="practice" class="practice">
+            <h2 class="section-title">Practice Checklist</h2>
+            <p class="section-intro">
+                Use this checklist after studying the technique pages.
+            </p>
+
+            <div class="practice-grid">
+                <div class="practice-card">
+                    <h3>Step 1: Slide Hopping</h3>
+                    <label><input type="checkbox"> I can keep momentum with slide hopping.</label>
+                </div>
+
+                <div class="practice-card">
+                    <h3>Step 2: Wall Kick</h3>
+                    <label><input type="checkbox"> I can touch a wall and jump away cleanly.</label>
+                </div>
+
+                <div class="practice-card">
+                    <h3>Step 3: Crouch Kick</h3>
+                    <label><input type="checkbox"> I can combine crouch and jump timing on wall contact.</label>
+                </div>
+
+                <div class="practice-card">
+                    <h3>Step 4: Tap Strafe</h3>
+                    <label><input type="checkbox"> I can use repeated forward inputs to turn after a jump.</label>
+                </div>
+
+                <div class="practice-card">
+                    <h3>Step 5: Ras Strafe</h3>
+                    <label><input type="checkbox"> I can chain directional inputs for a sharper redirect.</label>
+                </div>
+
+                <div class="practice-card">
+                    <h3>Step 6: Lurch Strafe</h3>
+                    <label><input type="checkbox"> I can use timed lurch inputs to control air movement.</label>
+                </div>
+            </div>
+
+            <p id="progressText">Progress: 0 / 6 completed</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Titanfall 2 Movement Lab</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
