@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movement Detail</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1>Titanfall 2 Movement Lab</h1>
+            <div class="nav-links">
+                <a href="index.html#home">Home</a>
+                <a href="index.html#techniques">Techniques</a>
+                <a href="checklist.html">Checklist</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detail-hero">
+            <p class="tag" id="detailDifficulty">Movement Guide</p>
+            <h2 id="detailTitle">Movement Technique</h2>
+            <p id="detailIntro"></p>
+        </section>
+
+        <section class="detail-grid">
+            <div class="detail-box">
+                <h3>Keys / Input</h3>
+                <p id="detailKeys"></p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Movement Principle</h3>
+                <p id="detailPrinciple"></p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Gameplay Use</h3>
+                <p id="detailUse"></p>
+            </div>
+
+            <div class="detail-box">
+                <h3>Practice Steps</h3>
+                <ul id="detailPractice"></ul>
+            </div>
+        </section>
+
+        <section class="video-section">
+            <h2 class="section-title">Demo Video</h2>
+
+            <div class="video-box">
+                <video id="movementVideo" class="movement-video" controls muted loop>
+                    <source id="videoSource" src="" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </section>
+
+        <section class="detail-actions">
+            <button onclick="goBackHome()">Back to Techniques</button>
+            <button onclick="showRandomTip()">Show Practice Tip</button>
+            <p id="randomTip"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Titanfall 2 Movement Lab</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
